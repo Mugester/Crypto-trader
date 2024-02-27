@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+*{
+	font-family: "Anta", sans-serif;
+}
+body{
+	background-color: rgb(38, 38, 38);
+	color: whitesmoke;
+}
+.navbar{
+    background-color: rgb(31, 31, 31) !important;
+}
+.nav-link{
+    color: antiquewhite;
+}
+.nav-link:hover {
+    color: azure;
+}
+.form-control{
+    background-color: rgb(210, 210, 210);
+}
+.form-control:focus{
+    background-color: beige;
+}
+.MbBtn{
+    background-color: bisque;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.Main-card {
+	display: flex;
+	align-items: center;
+	height: 4rem;
+	justify-content: space-evenly;
+	margin-top: 6rem;
+	background-color: rgba(70, 70, 70, 0.811);
+	margin-left: 2rem;
+	margin-right: 2rem;
+	border-radius: 50px 2px;
+  }
+  
+  .ex-cards {
+	display: flex;
+	align-items: center;
+	height: 4rem;
+	font-size: 18px;
+	justify-content: space-evenly;
+	margin-top: 5rem;
+	background-color: rgba(179, 179, 179, 0.767);
+	margin-left: 3rem;
+	margin-right: 3rem;
+	border-radius: 10px 50px;
+  }
+  
+  .name {
+	width: 5rem;
+	/* margin-right: 5px; */
+  }
+  
+  .price {
+	width: 9rem;
+  }
+  
+  .rank {
+	width: 7rem;
+  }
+  
+  /* Responsive adjustments */
+  @media only screen and (max-width: 768px) {
+	.Main-card,
+	.chart,
+	.ex-cards {
+	  flex-direction: column;
+	  align-items: center;
+	  height: auto;
+	  padding: 1rem;
+	  text-align: center;
+	}
+  
+	.Main-card,
+	.ex-cards {
+	  margin: 3rem 1rem;
+	  border-radius: 10px; /* Adjust as needed */
+	}
+  
+	.name,
+	.price,
+	.rank {
+	  width: auto;
+	  margin-bottom: 0.5rem; /* Adjust as needed */
+	}
+  }
+  
+
+#myVideo{
+	height: 1000px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	filter: brightness(40%);
+}
+.currency-button button{
+	height: 2rem;
+	background-color: orange;
+	border: none;
+	margin-left: 10px;
+	/* margin-top: 100px; */
+	width: 4rem;
+	border-radius: 10px; 
+	position: relative;
+	top: 100px;
+}
+
+/* Coin Detail css */
+
+.coin-detail{
+	padding-left: 50px;
+	padding-top: 50px;
+	margin-top: 1rem;	
+
+}
+.time{
+	font-weight: bold;
+}
+.coin-image{
+	margin-top: 20px
+}
+.coin-name{
+	font-weight: bold;
+	font-size: 27px;
+	margin-top: 20px;
+}
+.coin-price{
+	font-weight: bold;
+	font-size: 22px;
+	margin-top: 10px;
+}
+.coin-profit{
+	margin-top: 5px;
+	margin-left: 7px;
+}
+.coin-rank{
+	font-weight: bold;
+	font-size: 27px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.coin-desc{
+	width: 20rem;
+	margin-top: 5px;
+	overflow: hidden;
+}
+
+/* Single coin detail page btn  */
+
+.btn-coinDetial button{
+	height: 2rem;
+	background-color: orange;
+	border: none;
+	width: 5rem;
+	border-radius: 10px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/* chart css */
+
+.coin-detail-graph {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .coin-info {
+    width: 20%;
+    box-sizing: border-box;
+	margin-right: 6rem;
+  }
+  .coin-info2{
+	width: 70%;
+	/* position: relative;
+	left: 90px; */
+  }
+  @media (max-width: 768px) {
+    .coin-info,
+	.coin-info2
+	 {
+      width: 100%;
+	  align-items: center;
+	  height: auto;
+	  padding: 1rem;
+	  /* text-align: center; */
+    }
+  }
